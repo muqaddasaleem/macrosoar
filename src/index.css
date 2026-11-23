@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Dosis', 'Poppins', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+    
+    /* Exact Macro Soar Theme Colors */
+    --color-dark-navy: #080a3c;
+    --color-text-body: #4a6f8a;
+    --color-coral: #ff612f;
+    --color-teal: #13c4a1;
+    --color-sky: #6ec1e4;
+    --color-bg-light: #f4f6fc;
+    --color-bg-soft: #f8fbfa;
+    --color-bg-purple: #f4f5fe;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #ffffff;
+    color: #4a6f8a;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: #080a3c;
+  }
+}
+
+/* Macro Soar styled buttons and badges */
+.btn-primary-gradient {
+  background: linear-gradient(135deg, #ff612f 0%, #fc4c86 100%);
+  color: #ffffff;
+  box-shadow: 0 5px 20px rgba(255, 97, 47, 0.35);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btn-primary-gradient:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 97, 47, 0.5);
+  color: #ffffff;
+}
+
+.btn-navy-outline {
+  background: #ffffff;
+  color: #080a3c;
+  border: 2px solid #080a3c;
+  transition: all 0.3s ease;
+}
+
+.btn-navy-outline:hover {
+  background: #080a3c;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Card and container shadows from macrosoar.com */
+.soar-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #edf2f9;
+  box-shadow: 0 10px 30px rgba(8, 10, 60, 0.06);
+  transition: all 0.35s ease;
+}
+
+.soar-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(8, 10, 60, 0.12);
+  border-color: #ffdacf;
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f6fc;
+}
+::-webkit-scrollbar-thumb {
+  background: #acc5db;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff612f;
+}
